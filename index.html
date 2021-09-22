@@ -5,55 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
+
 <body>
     <!-- Шапка -->
-    <header>
-    <nav>
+    <header class="header">
+        <div class="container main-nav">
+    <nav class="main-nav">
     <a href="/index.html" class="logo">Web<span class="logo-part">Studio</span></a>
     <ul class="site-nav">
-        <li><a href="" class="link current">Студия</a></li>
-        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-        <li><a href="" class="link">Контакты</a></li>
+        <li class="item"><a href="" class="link current">Студия</a></li>
+        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li class="item"><a href="" class="link">Контакты</a></li>
     </ul>
     </nav>
     <ul class="contacts-nav">
-    <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-    <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
+    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+    <li class="item"><a href="tel:+380961111111" class="link">+380961111111</a></li>
     </ul>
+    </div>
     </header>
 
 <main>
     <!-- Герой -->
-    <section class="hero">
+      <section class="hero section">
+        <div class="container">
         <h1 class="title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button">Заказать услугу</button>
+    </div>
     </section>
-    <!-- Наши преимущества -->
-    <section class="benefits">
-    <ul>
-        <li>
+       <!-- Наши преимущества -->
+    <section class="section">
+        <div class="container">
+    <ul class="benefits">
+        <li class="item">
             <h2 class="benefits-title">Внимание к деталям</h2>
             <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
+        <li class="item">
             <h2 class="benefits-title">Пунктуальность</h2>
             <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
-        <li>
+        <li class="item">
             <h2 class="benefits-title">Планирование</h2>
             <p class="benefits-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
-        <li>
+        <li class="item">
             <h2 class="benefits-title">Современные технологии</h2>
             <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
+    </div>
 </section>
     <!-- Чем мы занимаемся -->
-<section class="work">
+<section class="work section">
+    <div class="container">
     <h3 class="title">Чем мы занимаемся</h3>
     <ul>
     <li>
@@ -66,9 +78,11 @@
     <img src="./images/box3.jpg" alt="web-design" width="370" class="link">
     </li>
     </ul>
+    </div>
 </section>
     <!-- Наша команда -->
-<section class="team">
+<section class="team section">
+    <div class="container">
     <h3 class="title">Наша команда</h3>
     <ul>
     <li>
@@ -92,10 +106,12 @@
         <p lang="en" class="profession">UI Designer</p>
     </li>
     </ul>
+    </div>
 </section>
 </main>
     <!-- Подвал -->
 <footer class="footer">
+    <div class="container">
     <a href="/index.html" class="logo">Web<span class="logo-part-2">Studio</span></a>
     <address class="address">
     <ul>
@@ -110,6 +126,7 @@
         </li>
     </ul>
     </address>
+    </div>
 </footer>
 
 </body>
