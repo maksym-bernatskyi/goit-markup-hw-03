@@ -170,7 +170,6 @@ ul {
 /* ---------benefits------------ */
 .benefits {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .benefits .item {
@@ -209,10 +208,9 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-.work .title,
-.team .title {
+.work .title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -222,10 +220,32 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.work-items {
+  display: flex;
+}
+.work-items .item {
+  width: 370px;
+  margin-right: 30px;
+}
+.work-items .item:last-child {
+  margin-right: 0;
+}
 /* ---------team------------ */
-.team .team-member {
+.team .title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.team .team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -247,12 +267,27 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.team-items {
+  display: flex;
+}
+.team-items .item {
+  width: 370px;
+  margin-right: 30px;
+}
+.team-items .item:last-child {
+  margin-right: 0;
+}
 /* ---------footer------------ */
 .footer {
   background-color: var(--secondary-bg-color);
 }
 .logo-part-2 {
   color: var(--primary-white-color);
+}
+.footer-nav .logo {
+  display: block;
+  padding-top: 60px;
+  padding-botton: 20px;
 }
 .address .actual-address {
   font-family: Roboto;
@@ -278,6 +313,13 @@ ul {
 .address .contacts:focus {
   color: var(--accent-color);
 }
+.address .footer-items .item {
+  margin-bottom: 9px;
+}
+.address .footer-items {
+  padding-bottom: 60px;
+}
+
 /* ---------portfolio------------ */
 /* ---------portfolio buttons------------ */
 .button {
