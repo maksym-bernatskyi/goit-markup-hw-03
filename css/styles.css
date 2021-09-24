@@ -47,6 +47,12 @@ ul {
   padding-bottom: 94px;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---------header------------ */
 .main-nav {
   display: flex;
@@ -165,7 +171,6 @@ ul {
 /* ---------benefits------------ */
 .benefits {
   display: flex;
-  justify-content: space-between;
 }
 .benefits .item {
   width: 270px;
@@ -202,6 +207,8 @@ ul {
 .work {
   margin-top: 0;
   margin-bottom: 0;
+  background-color: #fff;
+  :#F5F4FA ;
 }
 .work .title {
   margin-top: 0;
@@ -226,11 +233,11 @@ ul {
   margin-right: 0;
 }
 /* ---------team------------ */
+.team {
+  background-color: #f5f4fa;
+}
 .team .title {
-  margin-top: 0;
   margin-bottom: 50px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
