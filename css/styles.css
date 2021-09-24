@@ -52,10 +52,6 @@ ul {
   max-width: 100%;
   height: auto;
 }
-.link {
-  display: block;
-  text-decoration: none;
-}
 
 /* ---------header------------ */
 .main-nav {
@@ -295,6 +291,7 @@ ul {
 }
 .address .actual-address {
   font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -345,24 +342,27 @@ ul {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-  }
-  .buttons .button {
-    padding: 6px 22px;
-    margin-right: 8px;
-  }
-  .buttons .button:last-child {
-    margin-right: 0;
-  }
+}
+.buttons .button {
+  padding: 6px 22px;
+  margin-right: 8px;
+}
+.buttons .button:last-child {
+  margin-right: 0;
+}
 
-  /* ---------portfolio gallery------------ */
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #eeeeee;
-  }
-
+/* ---------portfolio gallery------------ */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+}
+.gallery .link {
+  display: block;
+  text-decoration: none;
+}
 .gallery .title {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -388,6 +388,7 @@ ul {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 .gallery .item:nth-child(3n) {
   margin-right: 0px;
