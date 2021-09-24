@@ -321,7 +321,7 @@ ul {
 }
 /* ---------portfolio------------ */
 /* ---------portfolio buttons------------ */
-.button {
+.btn {
   padding: 6px 22px;
   margin-right: 8px;
   font-family: Roboto;
@@ -336,14 +336,14 @@ ul {
   cursor: pointer;
   border: none;
 }
-.button:hover,
-.button:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-.button:last-child {
+/* .btn:last-child {
   margin-right: 0;
-}
+} */
 .buttons {
   display: flex;
   justify-content: center;
