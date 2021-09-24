@@ -318,37 +318,36 @@ ul {
 }
 .address .footer-items .item:last-child {
   margin-bottom: 0;
-
-  /* ---------portfolio------------ */
-  /* ---------portfolio buttons------------ */
-  .button {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    background: #f5f4fa;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .button:hover,
-  .button:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-  }
-  .buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
 }
-.buttons .button {
+/* ---------portfolio------------ */
+/* ---------portfolio buttons------------ */
+.button {
   padding: 6px 22px;
   margin-right: 8px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
 }
-.buttons .button:last-child {
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.button:last-child {
   margin-right: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* ---------portfolio gallery------------ */
