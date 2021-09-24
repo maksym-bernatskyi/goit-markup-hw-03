@@ -321,9 +321,16 @@ ul {
 }
 /* ---------portfolio------------ */
 /* ---------portfolio buttons------------ */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
 .btn {
   padding: 6px 22px;
-  margin-right: 8px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -341,22 +348,11 @@ ul {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-/* .btn:last-child {
-  margin-right: 0;
-} */
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
 
 /* ---------portfolio gallery------------ */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #eeeeee;
 }
 .gallery .link {
   display: block;
@@ -373,10 +369,7 @@ ul {
   color: var(--primary-text-color);
 }
 .gallery .text {
-  margin-top: 0;
   margin-bottom: 20px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
