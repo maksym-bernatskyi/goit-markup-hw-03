@@ -52,6 +52,10 @@ ul {
   max-width: 100%;
   height: auto;
 }
+.link {
+  display: block;
+  text-decoration: none;
+}
 
 /* ---------header------------ */
 .main-nav {
@@ -204,12 +208,6 @@ ul {
   color: var(--secondary-text-color);
 }
 /* ---------work------------ */
-.work {
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: #fff;
-  :#F5F4FA ;
-}
 .work .title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -269,18 +267,21 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.team-items {
+.team-list {
   display: flex;
 }
-.team-items .item {
+.team-list .item {
   width: 370px;
   margin-right: 30px;
+  background-color: var(--primary-white-color);
 }
-.team-items .item:last-child {
+.team-list .item:last-child {
   margin-right: 0;
 }
 /* ---------footer------------ */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 .logo-part-2 {
@@ -288,12 +289,12 @@ ul {
 }
 .footer-nav .logo {
   display: block;
-  padding-top: 60px;
-  padding-botton: 20px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .address .actual-address {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -318,54 +319,54 @@ ul {
 .address .footer-items .item {
   margin-bottom: 9px;
 }
-.address .footer-items {
-  padding-bottom: 60px;
-}
+.address .footer-items .item:last-child {
+  margin-bottom: 0;
 
-/* ---------portfolio------------ */
-/* ---------portfolio buttons------------ */
-.button {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background: #f5f4fa;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.buttons .button {
-  padding: 6px 22px;
-  margin-right: 8px;
-}
-.buttons .button:last-child {
-  margin-right: 0;
-}
+  /* ---------portfolio------------ */
+  /* ---------portfolio buttons------------ */
+  .button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background: #f5f4fa;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .buttons .button {
+    padding: 6px 22px;
+    margin-right: 8px;
+  }
+  .buttons .button:last-child {
+    margin-right: 0;
+  }
 
-/* ---------portfolio gallery------------ */
-.gallery {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #eeeeee;
-}
+  /* ---------portfolio gallery------------ */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+  }
+
 .gallery .title {
   margin-top: 20px;
   margin-bottom: 4px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -382,10 +383,6 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
 }
 .gallery .item {
   width: 370px;
